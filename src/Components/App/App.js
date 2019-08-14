@@ -1,6 +1,9 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import SearchBar from '../SearchBar/SearchBar';
+import SearchResults from '../SearchResults/SearchResults';
+import PlayList from '../PlayList/PlayList';
+
 
 class App extends React.Component {
   constructor(props) {
@@ -20,7 +23,7 @@ class App extends React.Component {
             <SearchBar />
           <div className="App-playlist">
             <SearchResults searchResults={this.state.searchResults}/>
-            <Playlist />
+            <PlayList />
           </div>
         </div>
       </div>
