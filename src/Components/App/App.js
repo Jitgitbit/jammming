@@ -9,6 +9,7 @@ import Spotify from '../../util/Spotify';
 class App extends React.Component {
   constructor(props) {
     super(props);
+
     this.state = {
       searchResults: [],
       playlistName: 'My Playlist',
@@ -24,9 +25,9 @@ class App extends React.Component {
     let tracks = this.state.playlistTracks;
     if(tracks.find(savedTrack => savedTrack.id === track.id)) {
       return;
-    } else {
-      tracks.push(track);
     }
+
+    tracks.push(track);
     this.setState({playlistTracks: tracks})
   }
 
@@ -64,8 +65,7 @@ class App extends React.Component {
         <div className="App">
             <SearchBar onSearch={this.search} />
           <div className="App-playlist">
-            <SearchResults searchResults={this.state.searchResults} 
-            onAdd={this.addTrack}/>
+            <SearchResults searchResults={this.state.searchResults} onAdd={this.addTrack} />
             <Playlist playlistName={this.state.playlistName} 
             playlistTracks={this.state.playlistTracks} 
             onRemove={this.removeTrack} 
