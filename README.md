@@ -1,3 +1,9 @@
+deployed in surge.sh
+IP:45.55.110.124
+domain name:minnnim.surge.sh
+----------------------------
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
