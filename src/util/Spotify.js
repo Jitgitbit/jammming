@@ -1,5 +1,5 @@
 const clientId = 'b92ffdfcaa1e41eabc4d5c310f4b0655';
-const redirectUri = 'http://localhost:3000/';
+const redirectUri = 'http://minnnim.surge.sh';
 let accessToken;
 
 const Spotify = {
